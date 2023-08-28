@@ -7,7 +7,7 @@ class Temporizador:
     def setDuracao(self,novoDuracao):
         self.duracao = novoDuracao
 
-    def iniciarContagem(self):
+    def ativar(self):
         for t in range(self.duracao,0,-1):
             print(f'{t} seg')
             time.sleep(1)
@@ -15,6 +15,10 @@ class Temporizador:
 
 
 
-timer = Temporizador()
-timer.setDuracao(10)
-timer.iniciarContagem()
+# timer = Temporizador()
+# timer.setDuracao(10)
+# timer.ativar()
+
+t = Temporizador()
+t.setDuracao(5)
+t.ativar()

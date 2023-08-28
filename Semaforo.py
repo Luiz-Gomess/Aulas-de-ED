@@ -51,4 +51,4 @@ class SemaforoTemporizado:
 
     def start(self):
         self.timer.setDuracao(self.tempoDeTransição[self.estadoAtual])
-        self.timer.iniciarContagem()
+        self.timer.ativar()
